@@ -56,15 +56,11 @@
             <parameter id="originTime:species" lower="0.0" name="stateNode">0.1</parameter>
             <parameter id="netDivRate:species" lower="0.0" name="stateNode">2.0</parameter>
             <parameter id="turnOverRate:species" lower="0.0" upper="1.0" name="stateNode">0.5</parameter>
-            <stateNode id="tree:gene1" spec="speciesnetwork.EmbeddedTree">
-                <taxonset id="taxonset:gene1" spec="TaxonSet" alignment="@gene1"/>
+          <plate range="gene1,gene2,gene3" var="gene">
+            <stateNode id="tree:$(gene)" spec="speciesnetwork.EmbeddedTree">
+                <taxonset id="taxonset:$(gene)" spec="TaxonSet" alignment="@$(gene)"/>
             </stateNode>
-            <stateNode id="tree:gene2" spec="speciesnetwork.EmbeddedTree">
-                <taxonset id="taxonset:gene2" spec="TaxonSet" alignment="@gene2"/>
-            </stateNode>
-            <stateNode id="tree:gene3" spec="speciesnetwork.EmbeddedTree">
-                <taxonset id="taxonset:gene3" spec="TaxonSet" alignment="@gene3"/>
-            </stateNode>
+          </plate>
         </state>
 
         <init id="SNI" spec="speciesnetwork.SpeciesNetworkInitializer" estimate="false" method="random" speciesNetwork="@network:species" origin="@originTime:species">
