@@ -1693,29 +1693,11 @@
         <state id="state">
             <stateNode id="network:species" spec="speciesnetwork.NetworkParser" tree="@newick:species">
                 <taxonset id="taxonsuperset" spec="TaxonSet">
-                  <plate var="lect" range="kira1248,kuii1253">
+                  <plate var="lect" range="kira1248,kuii1253,abui1241-fuime,atim1239,abui1241-takal,abui1241-ulaga,kelo1247-bring,kelo1247-hopte">
                     <taxon id="l-$(lect)" spec="TaxonSet">
                         <taxon id="$(lect)" spec="Taxon"/>
                     </taxon>
                   </plate>
-                    <taxon id="l-abui1241-fuime" spec="TaxonSet">
-                        <taxon id="abui1241-fuime" spec="Taxon"/>
-                    </taxon>
-                    <taxon id="l-atim1239" spec="TaxonSet">
-                        <taxon id="atim1239" spec="Taxon"/>
-                    </taxon>
-                    <taxon id="l-abui1241-takal" spec="TaxonSet">
-                        <taxon id="abui1241-takal" spec="Taxon"/>
-                    </taxon>
-                    <taxon id="l-abui1241-ulaga" spec="TaxonSet">
-                        <taxon id="abui1241-ulaga" spec="Taxon"/>
-                    </taxon>
-                    <taxon id="l-kelo1247-bring" spec="TaxonSet">
-                        <taxon id="kelo1247-bring" spec="Taxon"/>
-                    </taxon>
-                    <taxon id="l-kelo1247-hopte" spec="TaxonSet">
-                        <taxon id="kelo1247-hopte" spec="Taxon"/>
-                    </taxon>
                 </taxonset>
             </stateNode>
             <parameter id="originTime:species" lower="0.0" name="stateNode">0.1</parameter>
