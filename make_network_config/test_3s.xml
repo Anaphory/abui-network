@@ -1688,19 +1688,27 @@
     <map name="prior">beast.math.distributions.Prior</map>
 
     <init spec="beast.util.TreeParser" id="newick:species" IsLabelledNewick="true" adjustTipHeights="false"
-          newick="(((KiraKui:0.02,(Abui:0.01)#H1[&amp;gamma=0.3]:0.01)S1:0.03,(#H1:0.02,Klon:0.03)S2:0.02)R:0.05)"/>
-    <run id="mcmc" spec="MCMC" chainLength="2000000" storeEvery="10000">
+          newick="((((l-kira1248:0.1,Kui:0.01):0.01,((Abui-Ulaga:0.005,(Abui-Takalelang:0.003,(Abui-Fuimelang:0.002,Abui-Atimelang:0.002):0.001):0.002):0.005)#H1[&amp;gamma=0.3]:0.01)S1:0.03,(#H1:0.02,Klon:0.03)S2:0.02)R:0.05)"/>
+    <run id="mcmc" spec="MCMC" chainLength="200000000" storeEvery="10000">
         <state id="state">
             <stateNode id="network:species" spec="speciesnetwork.NetworkParser" tree="@newick:species">
                 <taxonset id="taxonsuperset" spec="TaxonSet">
-                    <taxon id="KiraKui" spec="TaxonSet">
+                    <taxon id="l-kira1248" spec="TaxonSet">
                         <taxon id="kira1248" spec="Taxon"/>
+                    </taxon>
+                    <taxon id="Kui" spec="TaxonSet">
                         <taxon id="kuii1253" spec="Taxon"/>
                     </taxon>
-                    <taxon id="Abui" spec="TaxonSet">
+                    <taxon id="Abui-Fuimelang" spec="TaxonSet">
                         <taxon id="abui1241-fuime" spec="Taxon"/>
+                    </taxon>
+                    <taxon id="Abui-Atimelang" spec="TaxonSet">
                         <taxon id="atim1239" spec="Taxon"/>
+                    </taxon>
+                    <taxon id="Abui-Takalelang" spec="TaxonSet">
                         <taxon id="abui1241-takal" spec="Taxon"/>
+                    </taxon>
+                    <taxon id="Abui-Ulaga" spec="TaxonSet">
                         <taxon id="abui1241-ulaga" spec="Taxon"/>
                     </taxon>
                     <taxon id="Klon" spec="TaxonSet">
