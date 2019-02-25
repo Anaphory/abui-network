@@ -1688,33 +1688,32 @@
     <map name="prior">beast.math.distributions.Prior</map>
 
     <init spec="beast.util.TreeParser" id="newick:species" IsLabelledNewick="true" adjustTipHeights="false"
-          newick="((((l-kira1248:0.1,Kui:0.01):0.01,((Abui-Ulaga:0.005,(Abui-Takalelang:0.003,(Abui-Fuimelang:0.002,Abui-Atimelang:0.002):0.001):0.002):0.005)#H1[&amp;gamma=0.3]:0.01)S1:0.03,(#H1:0.02,(Klon-Bring:0.02,Klon-Hopter:0.02):0.01)S2:0.02)R:0.05)"/>
+          newick="(((l-abui1241-fuime:1,l-kelo1247-hopte:1):1,(l-kuii1253:1,l-abui1241-takal:1):1):1,((l-abui1241-ulaga:1,l-kira1248:1):1,(l-atim1239:1,l-kelo1247-bring:1):1):1):1"/>
     <run id="mcmc" spec="MCMC" chainLength="200000000" storeEvery="10000">
         <state id="state">
             <stateNode id="network:species" spec="speciesnetwork.NetworkParser" tree="@newick:species">
                 <taxonset id="taxonsuperset" spec="TaxonSet">
-                    <taxon id="l-kira1248" spec="TaxonSet">
-                        <taxon id="kira1248" spec="Taxon"/>
+                  <plate var="lect" range="kira1248,kuii1253">
+                    <taxon id="l-$(lect)" spec="TaxonSet">
+                        <taxon id="$(lect)" spec="Taxon"/>
                     </taxon>
-                    <taxon id="Kui" spec="TaxonSet">
-                        <taxon id="kuii1253" spec="Taxon"/>
-                    </taxon>
-                    <taxon id="Abui-Fuimelang" spec="TaxonSet">
+                  </plate>
+                    <taxon id="l-abui1241-fuime" spec="TaxonSet">
                         <taxon id="abui1241-fuime" spec="Taxon"/>
                     </taxon>
-                    <taxon id="Abui-Atimelang" spec="TaxonSet">
+                    <taxon id="l-atim1239" spec="TaxonSet">
                         <taxon id="atim1239" spec="Taxon"/>
                     </taxon>
-                    <taxon id="Abui-Takalelang" spec="TaxonSet">
+                    <taxon id="l-abui1241-takal" spec="TaxonSet">
                         <taxon id="abui1241-takal" spec="Taxon"/>
                     </taxon>
-                    <taxon id="Abui-Ulaga" spec="TaxonSet">
+                    <taxon id="l-abui1241-ulaga" spec="TaxonSet">
                         <taxon id="abui1241-ulaga" spec="Taxon"/>
                     </taxon>
-                    <taxon id="Klon-Bring" spec="TaxonSet">
+                    <taxon id="l-kelo1247-bring" spec="TaxonSet">
                         <taxon id="kelo1247-bring" spec="Taxon"/>
                     </taxon>
-                    <taxon id="Klon-Hopter" spec="TaxonSet">
+                    <taxon id="l-kelo1247-hopte" spec="TaxonSet">
                         <taxon id="kelo1247-hopte" spec="Taxon"/>
                     </taxon>
                 </taxonset>
