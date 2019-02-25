@@ -1688,7 +1688,7 @@
     <map name="prior">beast.math.distributions.Prior</map>
 
     <init spec="beast.util.TreeParser" id="newick:species" IsLabelledNewick="true" adjustTipHeights="false"
-          newick="((((l-kira1248:0.1,Kui:0.01):0.01,((Abui-Ulaga:0.005,(Abui-Takalelang:0.003,(Abui-Fuimelang:0.002,Abui-Atimelang:0.002):0.001):0.002):0.005)#H1[&amp;gamma=0.3]:0.01)S1:0.03,(#H1:0.02,Klon:0.03)S2:0.02)R:0.05)"/>
+          newick="((((l-kira1248:0.1,Kui:0.01):0.01,((Abui-Ulaga:0.005,(Abui-Takalelang:0.003,(Abui-Fuimelang:0.002,Abui-Atimelang:0.002):0.001):0.002):0.005)#H1[&amp;gamma=0.3]:0.01)S1:0.03,(#H1:0.02,(Klon-Bring:0.02,Klon-Hopter:0.02):0.01)S2:0.02)R:0.05)"/>
     <run id="mcmc" spec="MCMC" chainLength="200000000" storeEvery="10000">
         <state id="state">
             <stateNode id="network:species" spec="speciesnetwork.NetworkParser" tree="@newick:species">
@@ -1711,8 +1711,10 @@
                     <taxon id="Abui-Ulaga" spec="TaxonSet">
                         <taxon id="abui1241-ulaga" spec="Taxon"/>
                     </taxon>
-                    <taxon id="Klon" spec="TaxonSet">
+                    <taxon id="Klon-Bring" spec="TaxonSet">
                         <taxon id="kelo1247-bring" spec="Taxon"/>
+                    </taxon>
+                    <taxon id="Klon-Hopter" spec="TaxonSet">
                         <taxon id="kelo1247-hopte" spec="Taxon"/>
                     </taxon>
                 </taxonset>
