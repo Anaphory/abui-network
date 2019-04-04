@@ -77,19 +77,14 @@
             <parameter id="originTime:species" lower="0.0" name="stateNode">0.1</parameter>
             <parameter id="netDivRate:species" lower="0.0" name="stateNode">2.0</parameter>
             <parameter id="turnOverRate:species" lower="0.0" upper="1.0" name="stateNode">0.5</parameter>
+            <plate range="1,2,3" var="tree">
             <stateNode id="tree:gene1" spec="speciesnetwork.EmbeddedTree">
-                <taxonset id="taxonset:gene1" spec="TaxonSet" alignment="@gene1"/>
+                <taxonset id="taxonset:gene$(tree)" spec="TaxonSet" alignment="@gene1"/>
             </stateNode>
-            <stateNode id="tree:gene2" spec="speciesnetwork.EmbeddedTree">
-                <taxonset id="taxonset:gene2" spec="TaxonSet" alignment="@gene2"/>
-            </stateNode>
-            <stateNode id="tree:gene3" spec="speciesnetwork.EmbeddedTree">
-                <taxonset id="taxonset:gene3" spec="TaxonSet" alignment="@gene3"/>
-            </stateNode>
-            <stateNode id="index1" spec="beast.core.parameter.IntegerParameter" lower="0" upper="2"> 0 </stateNode>
-            <stateNode id="index2" spec="beast.core.parameter.IntegerParameter" lower="0" upper="2"> 1 </stateNode>
-            <stateNode id="index3" spec="beast.core.parameter.IntegerParameter" lower="0" upper="2"> 2 </stateNode>
-            <stateNode id="index4" spec="beast.core.parameter.IntegerParameter" lower="0" upper="2"> 0 </stateNode>
+            </plate>
+            <plate range="1,2,3,4" var="gene">
+            <stateNode id="index$(gene)" spec="beast.core.parameter.IntegerParameter" lower="0" upper="2"> 0 </stateNode>
+            </plate>
         </state>
 
         <!--
@@ -101,9 +96,9 @@
               newick="(((c2:0.03335151661826598,(b4:0.027190452259781853,b3:0.027190452259781853):0.006161064358484125):0.03623148308931505,(((b2:0.005073631027769405,b1:0.005073631027769405):0.022171351530035716,a2:0.027244982557805122):0.010875973599979598,a1:0.03812095615778472):0.03146204354979631):0.0032023815417494828,c1:0.07278538124933051):0.0"/>
         -->
         <init id="SNI" spec="speciesnetwork.SpeciesNetworkInitializer" estimate="false" method="random" speciesNetwork="@network:species" origin="@originTime:species">
-            <geneTree idref="tree:gene1"/>
-            <geneTree idref="tree:gene2"/>
-            <geneTree idref="tree:gene3"/>
+            <plate range="1,2,3" var="tree">
+            <geneTree idref="tree:gene$(tree)"/>
+            </plate>
             <rebuildEmbedding id="initEmbed" spec="speciesnetwork.operators.RebuildEmbedding" speciesNetwork="@network:species" taxonset="@taxonsuperset" weight="0.0">
                 <geneTree idref="tree:gene1"/>
                 <geneTree idref="tree:gene2"/>
