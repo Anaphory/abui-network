@@ -127,54 +127,20 @@
                 </prior>
             </distribution>
             <distribution id="likelihood" spec="util.CompoundDistribution">
-                <distribution id="likelihood:gene1" data="@gene1" spec="TreeLikelihood">
-                    <tree id="selector1" spec="speciesnetwork.TreeSelector">
+                <plate range="1,2,3,4" var="gene" >
+                <distribution id="likelihood:gene$(gene)" data="@gene$(gene)" spec="TreeLikelihood">
+                    <tree id="selector$(gene)" spec="speciesnetwork.TreeSelector">
                       <plate range="1,2,3" var="tree">
                       <tree idref="tree:gene$(tree)" />
                       </plate>
-                      <index idref="index1" />
+                      <index idref="index$(gene)" />
                     </tree>
-                    <siteModel id="siteModel:gene1" mutationRate="1.0" spec="SiteModel">
-                        <substModel id="jc:gene1" spec="JukesCantor"/>
+                    <siteModel id="siteModel:gene$(gene)" mutationRate="1.0" spec="SiteModel">
+                        <substModel id="jc:gene$(gene)" spec="JukesCantor"/>
                     </siteModel>
-                    <branchRateModel id="strictClock:gene1" clock.rate="1.0" spec="StrictClockModel"/>
+                    <branchRateModel id="strictClock:gene$(gene)" clock.rate="1.0" spec="StrictClockModel"/>
                 </distribution>
-                <distribution id="likelihood:gene2" data="@gene2" spec="TreeLikelihood">
-                    <tree id="selector2" spec="speciesnetwork.TreeSelector">
-                      <tree idref="tree:gene1" />
-                      <tree idref="tree:gene2" />
-                      <tree idref="tree:gene3" />
-                      <index idref="index2" />
-                    </tree>
-                    <siteModel id="siteModel:gene2" mutationRate="1.0" spec="SiteModel">
-                        <substModel id="jc:gene2" spec="JukesCantor"/>
-                    </siteModel>
-                    <branchRateModel id="strictClock:gene2" clock.rate="1.0" spec="StrictClockModel"/>
-                </distribution>
-                <distribution id="likelihood:gene3" data="@gene3" spec="TreeLikelihood">
-                    <tree id="selector3" spec="speciesnetwork.TreeSelector">
-                      <tree idref="tree:gene1" />
-                      <tree idref="tree:gene2" />
-                      <tree idref="tree:gene3" />
-                      <index idref="index3" />
-                    </tree>
-                    <siteModel id="siteModel:gene3" mutationRate="1.0" spec="SiteModel">
-                        <substModel id="jc:gene3" spec="JukesCantor"/>
-                    </siteModel>
-                    <branchRateModel id="strictClock:gene3" clock.rate="1.0" spec="StrictClockModel"/>
-                </distribution>
-                <distribution id="likelihood:gene4" data="@gene4" spec="TreeLikelihood">
-                    <tree id="selector4" spec="speciesnetwork.TreeSelector">
-                      <tree idref="tree:gene1" />
-                      <tree idref="tree:gene2" />
-                      <tree idref="tree:gene3" />
-                      <index idref="index4" />
-                    </tree>
-                    <siteModel id="siteModel:gene4" mutationRate="1.0" spec="SiteModel">
-                        <substModel id="jc:gene4" spec="JukesCantor"/>
-                    </siteModel>
-                    <branchRateModel id="strictClock:gene4" clock.rate="1.0" spec="StrictClockModel"/>
-                </distribution>
+                </plate>
             </distribution>
         </distribution>
 
