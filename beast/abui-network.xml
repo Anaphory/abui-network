@@ -93,6 +93,7 @@
         <parameter id="featureClockRateGammaScale:vocabulary" name="stateNode">0.2</parameter>
         <parameter id="vocabulary:covarion_alpha.s" lower="1.0E-4" name="stateNode" upper="1.0">0.5</parameter>
         <parameter id="vocabulary:covarion_s.s" lower="1.0E-4" name="stateNode" upper="Infinity">0.5</parameter>
+        <parameter id="clockRate.c:default" name="stateNode" upper="1000.0">0.0010000000000000002</parameter>
         </state>
 
         <init id="SNI" spec="speciesnetwork.SpeciesNetworkInitializer" estimate="false" method="random" speciesNetwork="@network:species" origin="@originTime:species">
@@ -125,10 +126,34 @@
                 <prior id="turnOverPrior" name="distribution" x="@turnOverRate:species">
                     <Beta id="betadistr.01" name="distr" alpha="1.0" beta="0.01"/>
                 </prior>
+          <prior id="clockPrior:default" name="distribution" x="@clockRate.c:default">
+            <LogNormal M="-6.907755278982137" S="2.302585092994046" id="DistributionForclockPrior:default" name="distr" offset="0.0" />
+          </prior>
+          <prior id="featureClockRatePrior.s:vocabulary" name="distribution">
+            <input id="featureClockRateCompound:vocabulary" name="x" spec="beast.core.parameter.CompoundValuable">
+            <plate range="1,2,3,4" var="gene">
+                <var idref="featureClockRate:vocabulary:$(gene)" />
+              </plate>
+            </input>
+            <input alpha="@featureClockRateGammaShape:vocabulary" beta="@featureClockRateGammaScale:vocabulary" id="featureClockRatePriorGamma:vocabulary" name="distr" spec="beast.math.distributions.Gamma" />
+          </prior>
+          <prior id="featureClockRateGammaScalePrior.s:vocabulary" name="distribution" x="@featureClockRateGammaScale:vocabulary">
+            <Exponential id="featureClockRateGammaShapePriorExponential.s:vocabulary" mean="0.23" name="distr" />
+          </prior>
+          <prior id="vocabulary:covarion_alpha_prior.s" name="distribution" x="@vocabulary:covarion_alpha.s">
+            <Uniform id="vocabulary:CovAlphaUniform" name="distr" upper="Infinity" />
+          </prior>
+          <prior id="vocabulary:covarion_s_prior.s" name="distribution" x="@vocabulary:covarion_s.s">
+            <Gamma id="vocabulary:Gamma.0" name="distr">
+              <parameter id="vocabulary:covarion_switch_gamma_param1" lower="0.0" name="alpha" upper="0.0">0.05</parameter>
+              <parameter id="vocabulary:covarion_switch_gamma_param2" lower="0.0" name="beta" upper="0.0">10.0</parameter>
+            </Gamma>
+          </prior>
+
             </distribution>
             <distribution id="likelihood" spec="util.CompoundDistribution">
                 <plate range="1,2,3,4" var="gene" >
-                <distribution id="likelihood:gene$(gene)" data="@gene$(gene)" spec="TreeLikelihood">
+                <distribution id="likelihood:gene$(gene)" data="@gene$(gene)" branchRateModel="@StrictClockModel.c:default" spec="TreeLikelihood">
                     <tree id="selector$(gene)" spec="speciesnetwork.TreeSelector">
                       <plate range="1,2,3" var="tree">
                       <tree idref="tree:gene$(tree)" />
