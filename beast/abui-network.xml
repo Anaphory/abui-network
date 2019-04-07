@@ -155,6 +155,9 @@
               <parameter id="vocabulary:covarion_switch_gamma_param2" lower="0.0" name="beta" upper="0.0">10.0</parameter>
             </Gamma>
           </prior>
+          <prior id="clockPrior:default" name="distribution" x="@clockRate.c:default">
+            <LogNormal M="-6.907755278982137" S="2.302585092994046" id="DistributionForclockPrior:default" name="distr" offset="0.0" />
+          </prior>
           <prior id="featureClockRatePrior.s:vocabulary" name="distribution">
             <input id="featureClockRateCompound:vocabulary" name="x" spec="beast.core.parameter.CompoundValuable">
               <plate range="to_wait,tree,two,vagina,wound,young_people" var="gene">
@@ -162,6 +165,12 @@
               </plate>
             </input>
             <input alpha="@featureClockRateGammaShape:vocabulary" beta="@featureClockRateGammaScale:vocabulary" id="featureClockRatePriorGamma:vocabulary" name="distr" spec="beast.math.distributions.Gamma" />
+          </prior>
+          <prior id="featureClockRateGammaScalePrior.s:vocabulary" name="distribution" x="@featureClockRateGammaScale:vocabulary">
+            <Exponential id="featureClockRateGammaShapePriorExponential.s:vocabulary" mean="0.23" name="distr" />
+          </prior>
+          <prior id="vocabulary:covarion_alpha_prior.s" name="distribution" x="@vocabulary:covarion_alpha.s">
+            <Uniform id="vocabulary:CovAlphaUniform" name="distr" upper="Infinity" />
           </prior>
             </distribution>
             <distribution id="likelihood" spec="util.CompoundDistribution">
