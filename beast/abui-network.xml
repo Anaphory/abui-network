@@ -79,18 +79,20 @@
             <stateNode id="network:species" spec="speciesnetwork.NetworkParser" tree="@newick:species">
                 <taxonset id="taxonsuperset" spec="TaxonSet">
                     <taxon id="A" spec="TaxonSet">
-                        <taxon id="a1" spec="Taxon"/>
-                        <taxon id="a2" spec="Taxon"/>
+                        <taxon id="abui1241-fuime" spec="Taxon"/>
+                        <taxon id="abui1241-takal" spec="Taxon"/>
                     </taxon>
                     <taxon id="B" spec="TaxonSet">
-                        <taxon id="b1" spec="Taxon"/>
-                        <taxon id="b2" spec="Taxon"/>
-                        <taxon id="b3" spec="Taxon"/>
-                        <taxon id="b4" spec="Taxon"/>
+                        <taxon id="abui1241-petle" spec="Taxon"/>
+                        <taxon id="abui1241-ulaga" spec="Taxon"/>
+                        <taxon id="kafo1240" spec="Taxon"/>
+                        <taxon id="kama1365" spec="Taxon"/>
+                        <taxon id="kuii1253" spec="Taxon"/>
+                        <taxon id="kira1248" spec="Taxon"/>
                     </taxon>
                     <taxon id="C" spec="TaxonSet">
-                        <taxon id="c1" spec="Taxon"/>
-                        <taxon id="c2" spec="Taxon"/>
+                        <taxon id="kelo1247-bring" spec="Taxon"/>
+                        <taxon id="kelo1247-hopte" spec="Taxon"/>
                     </taxon>
                 </taxonset>
             </stateNode>
@@ -99,7 +101,7 @@
             <parameter id="turnOverRate:species" lower="0.0" upper="1.0" name="stateNode">0.5</parameter>
             <plate range="1,2,3" var="tree">
             <stateNode id="tree:gene$(tree)" spec="speciesnetwork.EmbeddedTree">
-                <taxonset id="taxonset:gene$(tree)" spec="TaxonSet" alignment="data_vocabulary"/>
+                <taxonset id="taxonset:gene$(tree)" spec="TaxonSet" alignment="@data_vocabulary"/>
             </stateNode>
             </plate>
             <plate range="to_wait,tree,two,vagina,wound,young_people" var="gene">
