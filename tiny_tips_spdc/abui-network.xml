@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <beast namespace="beast.core:beast.core.util:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.branchratemodel:beast.evolution.likelihood"
 version="2.4">
-  <data id="data_vocabulary" name="data_vocabulary"
-  dataType="twoStateCovarion">
+  <data id="data_vocabulary" name="data_vocabulary">
+            <userDataType codeMap="A = 0,  1 = 1 4,  B = 1,  0 = 0 2 3 ,  ? = 0 1 2 3 4,  - = 0 1 2 3 4,  C = 2,  D = 3,  E = 4" codelength="1" id="PseudoDolloCovarionDatatype" spec="beast.evolution.datatype.UserDataType" states="5" />
+
     <sequence id="data_vocabulary:abui1241-fuime" taxon="abui1241-fuime" value="0??0???0?????0?????0????0??0100000?????0????0100000000????0???01000000000?????0100000001000100000000010000???010001000000001000010001010000100000000??????010000000????0???01000????01001000100000100000000100010000001000010000???0100000100001000100000001000000001000000001000000000????0????0??0?????0100000???0????010000???0???0??0???0????0100000010000000????01000000000????0???0100000????0???????0??????01000000???????01000000001000001000010000001000000???01000000????0100000000100000001000000100000???0100000100000010000001000000100000000100????0??????01000000100????0100000???0????010010000000000100000001000???010000???????0??010000000010000000????0????0100010000????0100000??0100000??010010000???0??????0???010000000???0100000???0????01000010000???0100101000000??????0??????0???0100100000001000000000???01000010000???01000000100000?????0??0?????????0???01000???0??0?????0???????0??????010000001000000??????0100????0100000000001000001000001000001000000????01000???01000000100000000001000000??0100000000100000100000100000000????0100000010000000????0100000010010000????0100000????0????01000000??????0???0???0???0?????01000000100000???0???0????010000000100001000000000???0????010000101000000001000100001000000100000001000000001000100000001000000010000?????0??01000000010000010000??????01000100000???????0????0???0????0???0100000010000000????01000000010000??0???????010010000000????01000010000???010000001000???0???????0?????010000100000100000????01000000000????010000????0100001000001000000???0????0??010000???0???010000100000??0100000??010000010010000100000??010000000??0?????01000????0???0???0?????0100???????0100000100010000000010010000000??0???0????0100???0?????01000010000000100000???0100000000100000000000001000000001000100000010000000??0???0????0??0100000?????0??????010010000000100000000100100000000???0100000????0????0????0100000???010000010000000100000010000????01000??0???0100???01000000?????????0100010000010000100???010000000????0????010000??010000000????0100000???01000001000010010000010000000????010000001000001000100000001000100000001000000010000010000000100000010001000????0??????????01000????0??????0100010001000010100001000?????0100???0???????01000000???0???010000100001000??????0??01000???010000000000?????0100000000??????01000000100000100000???????010000001000010000010000001000000???010000000001001000001000000????01000000000010000000010000000000???0100001000000000010000010000010000?????????0????01000000001000000001000000000100000000100000000010010000???0100000000???0???01000000010000000001000001000000001000000001000000??????010001000000000??0100000000?????????01000000000???0????010001000000???0100001000000100000010000????0????01000001000000000???010000??01000???0100000001000010000010000000000001000100001000000000001000000001000000000??????01000000100????0??01000100000001000000????01000000100000000100000001000001000000000000???0100000000???????0???0?????0100000000100000000010010000????01000000000001000000001000000000100000000100000000010000001000000000?????0????0?????????0???0???01000001000000010000100000000??010000000????010000001000????0????0???0????0100000001001000100000???010000010000????0??0???010000010000010000000????0??0????0??????0100000???0???0100000???????0100000000???010000??010000000??0???0???01000001000001000000010000000001000000000??0110000" />
     <sequence id="data_vocabulary:abui1241-petle" taxon="abui1241-petle" value="0??0???0?????0?????0????0??0?????0?????0????0????????0????0???0?????????0?????0???????0???0?????????0????0???01000????????010000???0??????0????????0??????0???????0????0???0???0????0??0???0?????0????????01000??????0????0????0???0?????0????0???0???????0????????0????????0?????????0????0????0??0?????0?????0???010000????0???0???0??0???0????0??????0???????0????00100000000????0???0?????0????0???????01000000??????010000000????????0100000????00100000??????0???01000000????0????????0???????0??????0010000???0?????00100000??????0??????0????????0??0????0??????0??????0100????0100000???0????0??001000000000???????0???0???0????0???????0??001000000010000000????0????0???0????0????0?????0??0010000??0??010000???0??????0???0???????0???0?????0???0????0????0????0???010000??????0??????0??????0???0100???????0?????????0???0????0????0???0??????0?????0?????0??0?????????0???01000???0??0?????0???????01000000??????0??????0??????0100????0??????????0?????0?????0?????0??????0????01000???0??????0??????????0??????0??0????????0?????0?????0????????010000??????0???????0????0??????0??010000????0100000????0????0??????0??????0???0???0???0?????0??????0?????0???0???0????0???????0????0?????????0???010000??????0????????01000????0??????0???????0????????0???0???????0???????0????0?????0??001000000?????0????0??????00100100000???????0????0???0????0???0??????0???????0????0???????0????0??0???????0??0???????0????0????010000???0??????0???0???010000000?????001000010000?????0????0?????????0????0????0????0????00100001000000???0????0100????0???0???0????0?????0??0?????0??0?????0??0????0?????0??0???????0??0?????01000????0???0???0100010??0???????0?????00100????????0??0???????0??0???0????0??0???0?????010000???????0010000???0????????0?????????????0????????01000??????0???????0??0???0????0100?????0?????0??????010001000000010000000??0????????0???0100000????0????0????0?????0???0?????0???????0??????0????0????01000??0???0??0???01000000?????????0???0?????0????0010???0???????0????0????0????0??0???????0????0?????0???0?????0????0100?????0???????0????0??????0?????0???0???????0???0???????0???????0?????0???????0??????001000100????010000000000???0????01000000???0???0??????0????0???0100000??0???0???????0??????0???0???0????0????0???0??????0??0???0???0??????????0?????0????????0??????0??????0?????0?????0???????0??????0????0?????0??????00100000???01000000010??0?????00100000????0??????????0????????0??????????0???010000??????????0?????0?????0????0?????????0????0????????0????????0?????????0100000000?????????0010????0???00100000001000???0???????0?????????0?????0????????0????????00100000??????01000?????????0??0010000000?????????00100000000???0????0???0??????0???0????0??????0??????0????0????0????0?????0?????????0???0????0??0???0???001000000????0?????0????????????0???0????0???????????0????????00100000000??????01000000100????0??0???0???????0??????0????0??????0????????0???????0?????00100000000000???0????????0???????0???0?????0????????00100000000??010000????0???????????0????????00100000000????????0?????????00100000?????????0?????0????0?????????0???0???0?????001000000????0010000000??0???????0????0??????0???0????0????0???0????0???????0010???0?????0???0?????010000????0??0???0?????0?????0???????0????0100????010000001000001000???0010000???????0100000000???0????0??001000000??0???0???0?????0?????0???????0?????????0?????????0??0??????" />
     <sequence id="data_vocabulary:abui1241-takal" taxon="abui1241-takal" value="0100100010000010000010000100100000100000100000100000001000010000100000000100000100000001000011000000010000100010001000000000100010001000000100000000100000010000000100001000100010000100100010000001000000010001000000100001000010001000001000010000100000001000000001000000001010000001000010010100100000100000100010000010001000100010010001000001000000100000010000011000000010000100001000010000100000000100000100000010000000010000000100000100001000000??????010000100010100100100000000100000010000001000001000100000100000001000000100000100000000100100101000000100000010010000100000100010000100001000000001000000010001000100001000000010010000000010000000100001000001001000010000010010100001000100100100001000100000010000100000010000100001000100001000010000100010000010000010000001000000100010001010000010000100010000100010000100010000001000001000001001000000000100010001000??01000001000000010000000100000100000010000101001000001000000000010000100000010000100000010000100010000100000010000000001000000100100000000100000100000010000000010001000000100000001000011000000101000010000100000100001000001000001000000100010001000100000010000010000010001000100001000000010000010000000010000100001000001000000001000100001000000100000001000000101000010000000100000010000100000100???????010000010000100000010001000001000000010000100010000100010000000100000010000010000001000010010000000100010000001000010000100001000010000010001000010100001001000100010000010000010000010000000010000100001000001000100000100000010001000010010000100010001000010001010010000010010000010010000010000100100000001001000101000101001000100001000010010000000010000100001000000010010000000100100010000100???010000001000010000000010001000010000000010000000000001000000101000100000001000000100100010000100100000100000101001010000100000100000000100100000000100010000010000100001000010000010001000001000000001000000100010100100010010001001000100000010000000001000100000100000101000100000001000010000100001000100000010010100000100001000010000100010000100000001000001000001000001000100000001000010000000100000001000001000000010000010000100100000100010100010001000001000001000100001000000100001000100001001000100000000100000???010001001010000100010000001001000100001000000000100000100000000100000001000001000100100001000000010000001000001000001000001000000???010000000001000100000010000100000100000000001000000011000000000100010000010000000100100001000001000010000000001000001000000001000000001000000001000000000100000000010100001000001000000100010000100000001000000001000000100000001000000001000000100001010000100000000??00010000001000000000100000000010001000001001000000100001000010000001000001000010000100000100000100000000100001000??010001000100000001000010000001000000000001000100000100000000000100000000100000000100000001000001001000010010000100000001000001000001000100100000000100000010000000100000000001000011000000100000001000100000010000000001000000010010000100100100000000000100000000100000000010000000010000000000100001000000000100000100001000000000100010000100001000000010000001000000??0010000001000001000000100100001000010001000001000000100100001000010001000001000010000??010000100001000000100000010000100100001000010100000100010001000001000000010000000010000100010010000000100100010001000000100000100000001000000001100000000100010000" />
@@ -19,13 +20,9 @@ version="2.4">
   <branchRateModel clock.rate="@clockRate.c:default"
   id="StrictClockModel.c:default"
   spec="beast.evolution.branchratemodel.StrictClockModel" />
-  <substModel alpha="@vocabulary:covarion_alpha.s" id="covarion"
-  spec="BinaryCovarion" switchRate="@vocabulary:covarion_s.s"
-  vfrequencies="@vocabulary:visiblefrequencies.s">
-    <parameter dimension="2" id="vocabulary:hiddenfrequencies.s"
-    lower="0.0" name="hfrequencies" upper="1.0">0.5 0.5</parameter>
-    <frequencies frequencies="0.5 0.5"
-    id="vocabulary:dummyfrequences.s" spec="Frequencies" />
+  <substModel deathprob="@vocabulary:pdcovarion_death.s" id="covarion" originLength="@vocabulary:pdcovarion_origin.s"
+              spec="BirthDeathCovarion2" switchRate="@vocabulary:pdcovarion_s.s" vfrequencies="@vocabulary:visiblefrequencies.s">
+            <parameter dimension="2" id="vocabulary: hiddenfrequencies.s" lower="0.0" name="hfrequencies" upper="1.0">0.5 0.5</parameter>
   </substModel>
   <map name="Uniform">beast.math.distributions.Uniform</map>
   <map name="Exponential">
@@ -44,8 +41,8 @@ version="2.4">
   <init spec="beast.util.TreeParser" id="newick:species"
   IsLabelledNewick="true" adjustTipHeights="false"
   newick="((((A-Atimelang:1,Kamang:1):1,Kiraman:2):1,(A-Ulaga:1,Kui:1):2):1,((A-Takalelang:1,Klon:1):1,(A-Petleng:1,Kafoa:1):1):2):5" />
-  <run id="mcmc" spec="MCMC" chainLength="200000000"
-  storeEvery="10000">
+  <run id="mcmc" spec="MCMC" chainLength="2000000000"
+  storeEvery="100000">
     <state id="state">
       <stateNode id="network:species"
       spec="speciesnetwork.NetworkParser" tree="@newick:species">
@@ -81,6 +78,7 @@ version="2.4">
           </taxon>
         </taxonset>
       </stateNode>
+      <parameter dimension="3" id="vocabulary:visiblefrequencies.s" lower="0.0" name="stateNode" upper="1.0">0.94 0.05 0.01</parameter>
       <parameter id="originTime:species" lower="0.0"
       name="stateNode">0.1</parameter>
       <parameter id="netDivRate:species" lower="0.0"
@@ -100,8 +98,6 @@ version="2.4">
         spec="beast.core.parameter.IntegerParameter" lower="0"
         upper="4">0</stateNode>
       </plate>
-      <parameter dimension="2" id="vocabulary:visiblefrequencies.s"
-      lower="0.0" name="stateNode" upper="1.0">0.5 0.5</parameter>
       <plate range="1pl_incl,2pl,2sg_informal,2sg_polite,3pl,3sg,Earth,above,adultery,alive,all,and,angry,animal,ant,arm,arrow,ash,at,axe,back,bad,bamboo,banana,bark_of_tree,battle,bean,because,bed,bedbug,below,betel_nut_areca,betel_vine,big,bird,black,blind,blue,blunt,body,body_hair,bone,bow,branch,breadfruit,breast,bride_price,broom,brother,brother_in_law,burden_stick,butterfly,candle,canoe,cassava,ceremonial_place,chair,cheap,cheek,chest,chew_betel,chicken,chieftain,child,chin,church,civet_cat,clan,claw,clay,clean,clothing,cloud,cold,cold_influenza,comb,conjunctivitis,cooked_corn,cooked_rice,cookhouse,coral_reef,coral_rock,correct,crocodile,cross_cousin,dark,day,day_after_tomorrow,day_before_yesterday,deaf,deer,difficult,digging_stick,dirty,dog,dolphin,door,dowry,drizzle,dry,dry_in_sun,dust,ear,earring,earthquake,earthworm,easy,egg,eight,empty,enemy,excrement,expensive,eye,far,fat,father,fathers_sister,feather,fence,fever,few,field,finger,fingernail,finished,fire,firewood,fish_trap,fishing_hook,fishnet,five,flat,flea,floor,flower,fly,flying_fox,foam,fog,foot,forehead,forest,four,fowl,friend,frog,fruit,full,garden,gebang_palm,good,grains,grandchild,grandfather,grandmother,grass,grasshopper,gravel,green,guilty,gum_tree,guts,hair,hand,head,heart,heavy,heel,here,hill_ridge,hole,holy,honey,horn,hot,hour,house,how,how_much_how_many,hungry,husband,ice,if,innocent,inside,itchy,jackfruit,judge,kidney,king_ruler,knee,knife,lake,lamp,language,lazy,leaf,left_side,leg,light_not_dark,light_weight,lightning,lime,lips,liver,long,lontar_palm,loom,louse_clothing,louse_eggs,louse_in_hair,lungs,machete,man,mango,many,market,marriage,marungga,mat,meat,meeting_house,milk,millet,money,monitor_lizard,moon,morning,mosque,mosquito,mother,mothers_brother,mountain,mouth,mucus,mud,murder,name,narrow,navel,near,neck,necklace,needle,nephew_niece,new,night,nine,no_not,nose,nostril,now,old_people,old_worn_house,older_brother,older_sibling,older_sister,one_hundred,oven,palm_of_hand,papaya,penalty,penis,person,poor,price,priest_modern,rack_above_hearth,rain,rainbow,raised_platform,rat,rattan,red,rib,rice_ear_bug,rice_field,rice_grains,rice_plant,rich,ridge,right_side,ringworm,ripe,ritual_mound,river_stream,road,root,rope,rotten,rough,round,sacrifice,sago,sail,salt,salty,same,sand,scabies,scared,scorpion,seed,sermon,seven,shark,sharp,shirt,short,shoulder,shy_ashamed,sick_painful,sister,six,skin,skinny,sky,slave,small,smoke,smooth,snake,snow,soil,sole_of_foot,sorcerer,sour,spear,spider,spine_lower_back,star,starfish,stick_pole,stomach_belly,stone,storage_house,straight,stranger,sugar_palm,sugarcane,sun,sweat,sweet,sweet_potato,tail,tall,taro,tear,teeth,ten,testicles,that,thatch_for_roofing,thatched_roof,there,thick,thin,thirsty,this,thousand,thread,thunder,tinea,to_accuse,to_answer,to_ask_question,to_bark,to_bathe,to_bathe_a_child,to_be_silent,to_bite,to_bless,to_blow,to_borrow,to_breathe,to_burn_clear_land,to_bury,to_buy,to_call_out,to_chase_away_to_run_after,to_chew,to_choose,to_climb,to_close,to_come,to_command,to_cook,to_count,to_crouch,to_cry,to_curse,to_cut,to_cut_down,to_dance,to_defend,to_die,to_dig,to_divide,to_dream,to_drink,to_drop,to_dwell,to_eat,to_fall_from_above,to_fall_over,to_fight,to_float,to_flow,to_fold,to_freeze,to_give,to_go,to_grasp,to_grow,to_guard,to_hear,to_help,to_hide,to_hit,to_hit_drum,to_hold,to_hunt,to_invite,to_kill,to_know,to_laugh,to_learn,to_let_go,to_lie_down,to_open,to_own,to_plant_rice,to_plant_yam,to_play,to_pound,to_pray,to_promise,to_pull,to_push,to_refuse,to_rub,to_rule,to_run,to_sail,to_say,to_scratch,to_search_for_to_hunt_for,to_see,to_sell,to_sew,to_shine,,to_shoo_to_chase_away_to_send_away,to_shoot,to_shoot_with_slingshot,to_sing,to_sit,to_skewer,to_slap,to_sleep,to_smell,to_speak,to_spit,to_split,to_squeeze,to_stab,to_stand,to_suck,to_surrender,to_swell,to_swim,to_teach,to_tell,to_tell_untruth,to_think,to_throw,to_tie,to_trade,to_turn,to_vomit,to_wait,to_wake_someone_up,to_wake_up,to_walk,to_wash,to_weave,to_whisper,to_wipe,to_work,to_worship,to_yawn,tomorrow,tongue,traditional_house,treaty,tree,trousers,turtle,twilight_dawn,two,uncooked_rice,vagina,vein,village,voice,waist,wall,water,wave,wet,whale,what,when,where,white,who,why,wide,wife,wind,window,wing,with,woman,womans_younger_sister,wood,word,wound,wrong,yellow,yesterday,young_people,younger_brother,younger_sibling"
       var="gene">
         <parameter id="featureClockRate:vocabulary:$(gene)"
@@ -111,12 +107,12 @@ version="2.4">
       lower="1.1" name="stateNode" upper="100.0">5.0</parameter>
       <parameter id="featureClockRateGammaScale:vocabulary"
       name="stateNode">0.2</parameter>
-      <parameter id="vocabulary:covarion_alpha.s" lower="1.0E-4"
-      name="stateNode" upper="1.0">0.5</parameter>
-      <parameter id="vocabulary:covarion_s.s" lower="1.0E-4"
-      name="stateNode" upper="Infinity">0.5</parameter>
+      <parameter dimension="2" id="vocabulary:pdcovarion_s.s" lower="1.0E-4" name="stateNode" upper="Infinity">0.5 0.5</parameter>
+      <parameter id="vocabulary:pdcovarion_origin.s" lower="1" name="stateNode" upper="Infinity">10</parameter>
+      <parameter dimension="2" id="vocabulary:pdcovarion_death.s" lower="1.0E-4" name="stateNode" upper="1.0">1.0 0.1</parameter>
       <parameter id="clockRate.c:default" name="stateNode"
       upper="1">1e-3</parameter>
+
     </state>
     <init id="SNI" spec="speciesnetwork.SpeciesNetworkInitializer"
     estimate="false" method="random"
@@ -150,7 +146,7 @@ version="2.4">
         spec="speciesnetwork.BirthHybridizationModel"
         network="@network:species"
         netDiversification="@netDivRate:species"
-        turnOver="@turnOverRate:species" betaShape="1.0" />
+        turnOver="@turnOverRate:species"/>
         <prior id="networkOrigin" name="distribution"
         x="@originTime:species">
           <LogNormal M="6.907755278982137" S="2.302585092994046"
@@ -164,10 +160,10 @@ version="2.4">
         <prior id="turnOverPrior" name="distribution"
         x="@turnOverRate:species">
           <Beta id="betadistr.01" name="distr" alpha="1.0"
-          beta="0.01" />
+          beta="10.0" />
         </prior>
         <prior id="vocabulary:covarion_s_prior.s"
-        name="distribution" x="@vocabulary:covarion_s.s">
+        name="distribution" x="@vocabulary:pdcovarion_s.s">
           <Gamma id="vocabulary:Gamma.0" name="distr">
             <parameter id="vocabulary:covarion_switch_gamma_param1"
             lower="0.0" name="alpha" upper="0.0">0.05</parameter>
@@ -201,10 +197,11 @@ version="2.4">
           <Exponential id="featureClockRateGammaShapePriorExponential.s:vocabulary"
           mean="0.23" name="distr" />
         </prior>
-        <prior id="vocabulary:covarion_alpha_prior.s"
-        name="distribution" x="@vocabulary:covarion_alpha.s">
-          <Uniform id="vocabulary:CovAlphaUniform" name="distr"
-          upper="Infinity" />
+        <prior id="vocabulary:pdcovarion_origin_prior.s" name="distribution" x="@vocabulary:pdcovarion_origin.s">
+          <Uniform id="vocabulary:PDCovOriginUniform" name="distr" upper="Infinity" />
+        </prior>
+        <prior id="vocabulary:pdcovarion_death_prior.s" name="distribution" x="@vocabulary:pdcovarion_death.s">
+          <Exponential id="vocabulary:PDCovDeathExp" mean="1.0" name="distr" />
         </prior>
       </distribution>
       <distribution id="likelihood"
@@ -396,12 +393,10 @@ version="2.4">
     parameter="@vocabulary:visiblefrequencies.s"
     spec="DeltaExchangeOperator" weight="1.0" />
     <operator id="clockScaler.c:default" parameter="@clockRate.c:default" scaleFactor="0.5" spec="ScaleOperator" weight="3.0" />
-    <operator id="vocabulary:covarion_alpha_scaler.s"
-    parameter="@vocabulary:covarion_alpha.s" scaleFactor="0.5"
-    spec="ScaleOperator" weight="1.0" />
-    <operator id="vocabulary:covarion_s_scaler.s"
-    parameter="@vocabulary:covarion_s.s" scaleFactor="0.5"
-    spec="ScaleOperator" weight="1.0" />
+    <operator id="vocabulary:pdcovarion_origin_scaler.s" parameter="@vocabulary:pdcovarion_origin.s" scaleFactor="0.75" spec="ScaleOperator" weight="0.1" />
+    <operator id="vocabulary:pdcovarion_s_scaler.s" parameter="@vocabulary:pdcovarion_s.s" scaleFactor="0.75" spec="ScaleOperator" weight="0.1" />
+    <operator id="vocabulary:pdcovarion_death_scaler.s" parameter="@vocabulary:pdcovarion_death.s" scaleFactor="0.75" spec="ScaleOperator" weight="0.1" />
+
     <operator id="featureClockRateGammaUpDown:vocabulary"
     scaleFactor="0.5" spec="UpDownOperator" weight="0.3">
       <parameter idref="featureClockRateGammaShape:vocabulary"
@@ -416,7 +411,7 @@ version="2.4">
         <parameter idref="featureClockRate:vocabulary:$(gene)" />
       </plate>
     </operator>
-    <logger id="screenlog" logEvery="10000" model="@posterior">
+    <logger id="screenlog" logEvery="100000" model="@posterior">
       <log idref="posterior" />
       <log id="ESS.0" spec="util.ESS" arg="@posterior" />
       <log idref="likelihood" />
@@ -426,14 +421,14 @@ version="2.4">
       spec="speciesnetwork.NetworkStatLogger" />
     </logger>
     <logger id="indexlog" fileName="tree_assoc.log"
-    logEvery="10000" model="@posterior" sort="smart">
+    logEvery="100000" model="@posterior" sort="smart">
       <plate range="1pl_incl,2pl,2sg_informal,2sg_polite,3pl,3sg,Earth,above,adultery,alive,all,and,angry,animal,ant,arm,arrow,ash,at,axe,back,bad,bamboo,banana,bark_of_tree,battle,bean,because,bed,bedbug,below,betel_nut_areca,betel_vine,big,bird,black,blind,blue,blunt,body,body_hair,bone,bow,branch,breadfruit,breast,bride_price,broom,brother,brother_in_law,burden_stick,butterfly,candle,canoe,cassava,ceremonial_place,chair,cheap,cheek,chest,chew_betel,chicken,chieftain,child,chin,church,civet_cat,clan,claw,clay,clean,clothing,cloud,cold,cold_influenza,comb,conjunctivitis,cooked_corn,cooked_rice,cookhouse,coral_reef,coral_rock,correct,crocodile,cross_cousin,dark,day,day_after_tomorrow,day_before_yesterday,deaf,deer,difficult,digging_stick,dirty,dog,dolphin,door,dowry,drizzle,dry,dry_in_sun,dust,ear,earring,earthquake,earthworm,easy,egg,eight,empty,enemy,excrement,expensive,eye,far,fat,father,fathers_sister,feather,fence,fever,few,field,finger,fingernail,finished,fire,firewood,fish_trap,fishing_hook,fishnet,five,flat,flea,floor,flower,fly,flying_fox,foam,fog,foot,forehead,forest,four,fowl,friend,frog,fruit,full,garden,gebang_palm,good,grains,grandchild,grandfather,grandmother,grass,grasshopper,gravel,green,guilty,gum_tree,guts,hair,hand,head,heart,heavy,heel,here,hill_ridge,hole,holy,honey,horn,hot,hour,house,how,how_much_how_many,hungry,husband,ice,if,innocent,inside,itchy,jackfruit,judge,kidney,king_ruler,knee,knife,lake,lamp,language,lazy,leaf,left_side,leg,light_not_dark,light_weight,lightning,lime,lips,liver,long,lontar_palm,loom,louse_clothing,louse_eggs,louse_in_hair,lungs,machete,man,mango,many,market,marriage,marungga,mat,meat,meeting_house,milk,millet,money,monitor_lizard,moon,morning,mosque,mosquito,mother,mothers_brother,mountain,mouth,mucus,mud,murder,name,narrow,navel,near,neck,necklace,needle,nephew_niece,new,night,nine,no_not,nose,nostril,now,old_people,old_worn_house,older_brother,older_sibling,older_sister,one_hundred,oven,palm_of_hand,papaya,penalty,penis,person,poor,price,priest_modern,rack_above_hearth,rain,rainbow,raised_platform,rat,rattan,red,rib,rice_ear_bug,rice_field,rice_grains,rice_plant,rich,ridge,right_side,ringworm,ripe,ritual_mound,river_stream,road,root,rope,rotten,rough,round,sacrifice,sago,sail,salt,salty,same,sand,scabies,scared,scorpion,seed,sermon,seven,shark,sharp,shirt,short,shoulder,shy_ashamed,sick_painful,sister,six,skin,skinny,sky,slave,small,smoke,smooth,snake,snow,soil,sole_of_foot,sorcerer,sour,spear,spider,spine_lower_back,star,starfish,stick_pole,stomach_belly,stone,storage_house,straight,stranger,sugar_palm,sugarcane,sun,sweat,sweet,sweet_potato,tail,tall,taro,tear,teeth,ten,testicles,that,thatch_for_roofing,thatched_roof,there,thick,thin,thirsty,this,thousand,thread,thunder,tinea,to_accuse,to_answer,to_ask_question,to_bark,to_bathe,to_bathe_a_child,to_be_silent,to_bite,to_bless,to_blow,to_borrow,to_breathe,to_burn_clear_land,to_bury,to_buy,to_call_out,to_chase_away_to_run_after,to_chew,to_choose,to_climb,to_close,to_come,to_command,to_cook,to_count,to_crouch,to_cry,to_curse,to_cut,to_cut_down,to_dance,to_defend,to_die,to_dig,to_divide,to_dream,to_drink,to_drop,to_dwell,to_eat,to_fall_from_above,to_fall_over,to_fight,to_float,to_flow,to_fold,to_freeze,to_give,to_go,to_grasp,to_grow,to_guard,to_hear,to_help,to_hide,to_hit,to_hit_drum,to_hold,to_hunt,to_invite,to_kill,to_know,to_laugh,to_learn,to_let_go,to_lie_down,to_open,to_own,to_plant_rice,to_plant_yam,to_play,to_pound,to_pray,to_promise,to_pull,to_push,to_refuse,to_rub,to_rule,to_run,to_sail,to_say,to_scratch,to_search_for_to_hunt_for,to_see,to_sell,to_sew,to_shine,to_shoo_to_chase_away_to_send_away,to_shoot,to_shoot_with_slingshot,to_sing,to_sit,to_skewer,to_slap,to_sleep,to_smell,to_speak,to_spit,to_split,to_squeeze,to_stab,to_stand,to_suck,to_surrender,to_swell,to_swim,to_teach,to_tell,to_tell_untruth,to_think,to_throw,to_tie,to_trade,to_turn,to_vomit,to_wait,to_wake_someone_up,to_wake_up,to_walk,to_wash,to_weave,to_whisper,to_wipe,to_work,to_worship,to_yawn,tomorrow,tongue,traditional_house,treaty,tree,trousers,turtle,twilight_dawn,two,uncooked_rice,vagina,vein,village,voice,waist,wall,water,wave,wet,whale,what,when,where,white,who,why,wide,wife,wind,window,wing,with,woman,womans_younger_sister,wood,word,wound,wrong,yellow,yesterday,young_people,younger_brother,younger_sibling"
       var="gene">
         <log idref="index$(gene)" />
       </plate>
     </logger>
     <logger id="tracelog" fileName="test_3s.xml.trace.log"
-    logEvery="1000" model="@posterior" sort="smart">
+    logEvery="100000" model="@posterior" sort="smart">
       <log idref="posterior" />
       <log idref="likelihood" />
       <log idref="prior" />
@@ -449,31 +444,32 @@ version="2.4">
       </plate>
     </logger>
     <logger id="specieslog" fileName="test_3s.xml.species.trees"
-    logEvery="1000" mode="tree">
+    logEvery="100000" mode="tree">
       <log id="networkLogger:species"
       spec="speciesnetwork.NetworkWithMetaDataLogger"
       speciesNetwork="@network:species" />
     </logger>
     <plate range="1,2,3,4,5" var="tree">
       <logger id="treelog:gene$(tree)"
-      fileName="test_3s.xml.gene$(tree).trees" logEvery="1000"
+      fileName="test_3s.xml.gene$(tree).trees" logEvery="100000"
       mode="tree">
         <log id="treeLogger:gene$(tree)" tree="@tree:gene$(tree)"
         spec="beast.evolution.tree.TreeWithMetaDataLogger" />
       </logger>
     </plate>
-    <logger fileName="other_states.log" logEvery="50000">
+    <logger fileName="other_states.log" logEvery="100000">
       <log idref="originTime:species" />
       <log idref="netDivRate:species" />
       <log idref="turnOverRate:species" />
       <log idref="vocabulary:visiblefrequencies.s" />
       <log idref="featureClockRateGammaShape:vocabulary" />
       <log idref="featureClockRateGammaScale:vocabulary" />
-      <log idref="vocabulary:covarion_alpha.s" />
-      <log idref="vocabulary:covarion_s.s" />
+      <log idref="vocabulary:pdcovarion_s.s" />
+      <log idref="vocabulary:pdcovarion_origin.s" />
+      <log idref="vocabulary:pdcovarion_death.s" />
       <log idref="clockRate.c:default" />
     </logger>
-    <logger fileName="feature_clock_rates.log" logEvery="50000">
+    <logger fileName="feature_clock_rates.log" logEvery="100000">
       <plate range="1pl_incl,2pl,2sg_informal,2sg_polite,3pl,3sg,Earth,above,adultery,alive,all,and,angry,animal,ant,arm,arrow,ash,at,axe,back,bad,bamboo,banana,bark_of_tree,battle,bean,because,bed,bedbug,below,betel_nut_areca,betel_vine,big,bird,black,blind,blue,blunt,body,body_hair,bone,bow,branch,breadfruit,breast,bride_price,broom,brother,brother_in_law,burden_stick,butterfly,candle,canoe,cassava,ceremonial_place,chair,cheap,cheek,chest,chew_betel,chicken,chieftain,child,chin,church,civet_cat,clan,claw,clay,clean,clothing,cloud,cold,cold_influenza,comb,conjunctivitis,cooked_corn,cooked_rice,cookhouse,coral_reef,coral_rock,correct,crocodile,cross_cousin,dark,day,day_after_tomorrow,day_before_yesterday,deaf,deer,difficult,digging_stick,dirty,dog,dolphin,door,dowry,drizzle,dry,dry_in_sun,dust,ear,earring,earthquake,earthworm,easy,egg,eight,empty,enemy,excrement,expensive,eye,far,fat,father,fathers_sister,feather,fence,fever,few,field,finger,fingernail,finished,fire,firewood,fish_trap,fishing_hook,fishnet,five,flat,flea,floor,flower,fly,flying_fox,foam,fog,foot,forehead,forest,four,fowl,friend,frog,fruit,full,garden,gebang_palm,good,grains,grandchild,grandfather,grandmother,grass,grasshopper,gravel,green,guilty,gum_tree,guts,hair,hand,head,heart,heavy,heel,here,hill_ridge,hole,holy,honey,horn,hot,hour,house,how,how_much_how_many,hungry,husband,ice,if,innocent,inside,itchy,jackfruit,judge,kidney,king_ruler,knee,knife,lake,lamp,language,lazy,leaf,left_side,leg,light_not_dark,light_weight,lightning,lime,lips,liver,long,lontar_palm,loom,louse_clothing,louse_eggs,louse_in_hair,lungs,machete,man,mango,many,market,marriage,marungga,mat,meat,meeting_house,milk,millet,money,monitor_lizard,moon,morning,mosque,mosquito,mother,mothers_brother,mountain,mouth,mucus,mud,murder,name,narrow,navel,near,neck,necklace,needle,nephew_niece,new,night,nine,no_not,nose,nostril,now,old_people,old_worn_house,older_brother,older_sibling,older_sister,one_hundred,oven,palm_of_hand,papaya,penalty,penis,person,poor,price,priest_modern,rack_above_hearth,rain,rainbow,raised_platform,rat,rattan,red,rib,rice_ear_bug,rice_field,rice_grains,rice_plant,rich,ridge,right_side,ringworm,ripe,ritual_mound,river_stream,road,root,rope,rotten,rough,round,sacrifice,sago,sail,salt,salty,same,sand,scabies,scared,scorpion,seed,sermon,seven,shark,sharp,shirt,short,shoulder,shy_ashamed,sick_painful,sister,six,skin,skinny,sky,slave,small,smoke,smooth,snake,snow,soil,sole_of_foot,sorcerer,sour,spear,spider,spine_lower_back,star,starfish,stick_pole,stomach_belly,stone,storage_house,straight,stranger,sugar_palm,sugarcane,sun,sweat,sweet,sweet_potato,tail,tall,taro,tear,teeth,ten,testicles,that,thatch_for_roofing,thatched_roof,there,thick,thin,thirsty,this,thousand,thread,thunder,tinea,to_accuse,to_answer,to_ask_question,to_bark,to_bathe,to_bathe_a_child,to_be_silent,to_bite,to_bless,to_blow,to_borrow,to_breathe,to_burn_clear_land,to_bury,to_buy,to_call_out,to_chase_away_to_run_after,to_chew,to_choose,to_climb,to_close,to_come,to_command,to_cook,to_count,to_crouch,to_cry,to_curse,to_cut,to_cut_down,to_dance,to_defend,to_die,to_dig,to_divide,to_dream,to_drink,to_drop,to_dwell,to_eat,to_fall_from_above,to_fall_over,to_fight,to_float,to_flow,to_fold,to_freeze,to_give,to_go,to_grasp,to_grow,to_guard,to_hear,to_help,to_hide,to_hit,to_hit_drum,to_hold,to_hunt,to_invite,to_kill,to_know,to_laugh,to_learn,to_let_go,to_lie_down,to_open,to_own,to_plant_rice,to_plant_yam,to_play,to_pound,to_pray,to_promise,to_pull,to_push,to_refuse,to_rub,to_rule,to_run,to_sail,to_say,to_scratch,to_search_for_to_hunt_for,to_see,to_sell,to_sew,to_shine,to_shoo_to_chase_away_to_send_away,to_shoot,to_shoot_with_slingshot,to_sing,to_sit,to_skewer,to_slap,to_sleep,to_smell,to_speak,to_spit,to_split,to_squeeze,to_stab,to_stand,to_suck,to_surrender,to_swell,to_swim,to_teach,to_tell,to_tell_untruth,to_think,to_throw,to_tie,to_trade,to_turn,to_vomit,to_wait,to_wake_someone_up,to_wake_up,to_walk,to_wash,to_weave,to_whisper,to_wipe,to_work,to_worship,to_yawn,tomorrow,tongue,traditional_house,treaty,tree,trousers,turtle,twilight_dawn,two,uncooked_rice,vagina,vein,village,voice,waist,wall,water,wave,wet,whale,what,when,where,white,who,why,wide,wife,wind,window,wing,with,woman,womans_younger_sister,wood,word,wound,wrong,yellow,yesterday,young_people,younger_brother,younger_sibling"
       var="gene">
         <log idref="featureClockRate:vocabulary:$(gene)" />
