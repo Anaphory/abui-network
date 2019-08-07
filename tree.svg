@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="587.15369"
+   height="240.74149"
+   preserveAspectRatio="none"
+   id="SVG"
+   style="font-size:11px;font-family:sans-serif;stroke-width:2px;shape-rendering:crispEdges"
+   viewBox="-20 -46.5 646.33843 250.36587"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="tree.svg"
+   inkscape:export-filename="/vol/home/kaipingga/publications/talks/2019-sle/network.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <metadata
+     id="metadata4332">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4330" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1080"
+     inkscape:window-height="1896"
+     id="namedview4328"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.2651163"
+     inkscape:cx="390.63623"
+     inkscape:cy="61.458651"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SVG" />
+  <path
+     d="m 531.85641,196.49377 -5.20567,0 0,-13.16415"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#11"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 531.85641,170.16546 -5.20567,0 0,13.16416"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#12"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 531.85641,143.83715 -7.81885,0 0,19.74623"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#9"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 531.85641,117.50884 -1.07188,0 0,0"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#7"
+     style="fill:none;stroke:#000000;stroke-width:2"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 531.85641,91.180543 -14.95371,0 0,24.682787"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#4"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 531.85636,64.852244 -0.14851,0 0,-13.164156"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#14"
+     style="fill:none;stroke:#000000;stroke-width:2"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 531.85636,38.523937 -0.14851,0 0,13.164151"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#15"
+     style="fill:none;stroke:#000000;stroke-width:2"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 531.856,-14.132672 -234.95333,0 0,13.16415147"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#18"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 531.85564,-40.460977 -546.391715,0 0,40.93228647"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#19"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 526.65074,183.32962 -2.61318,0 0,-19.74624"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#10"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 524.03756,163.58338 -0.0989,0 0,-23.03727"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#8"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 530.78453,117.50884 -6.84585,0 0,23.03727"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#6"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 523.93868,140.54611 -7.03598,0 0,-24.68278"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#5"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 516.9027,115.86333 -6.68824,0 0,-32.087617"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#3"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 531.70785,51.688088 -21.49339,0 0,32.087625"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#13"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 510.21446,83.775713 -379.19734,0 0,-42.372117"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#2"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 296.90267,-0.96852053 -165.88555,0 0,42.37211653"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#16"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 131.01712,41.403596 -145.553195,0 0,-40.93228653"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#1"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m -14.536075,0.47130947 -5.463925,0 0,0"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#0"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     d="m 530.78453,117.50884 c 0,-93.853395 -233.88186,-96.940839 -233.88186,-118.47736053"
+     class="treeEdge"
+     vector-effect="non-scaling-stroke"
+     id="node#17"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-dasharray:6.00000001, 2"
+     sodipodi:nodetypes="cc" />
+  <ellipse
+     cx="530.78455"
+     cy="117.50887"
+     rx="1.5438837"
+     ry="0.36870378"
+     class="nodeMark"
+     id="ellipse4276"
+     style="fill:#000000;shape-rendering:auto" />
+  <text
+     x="509.3432"
+     y="210.7316"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4278"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">A-Atimelang</text>
+  <text
+     x="509.3432"
+     y="183.06924"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4280"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">A-Petleng</text>
+  <text
+     x="509.3432"
+     y="155.40688"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4282"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">A-Ulaga</text>
+  <text
+     x="509.3432"
+     y="127.74451"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4284"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">Kafoa</text>
+  <text
+     x="509.3432"
+     y="100.08218"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4286"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">A-Takalelang</text>
+  <text
+     x="509.3432"
+     y="72.419823"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4288"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">Kui</text>
+  <text
+     x="509.3432"
+     y="44.757454"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4290"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">Kiraman</text>
+  <text
+     x="509.34302"
+     y="-10.567281"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4292"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">Klon</text>
+  <text
+     x="509.34302"
+     y="-38.229641"
+     dominant-baseline="central"
+     transform="scale(1.0506681,0.95177536)"
+     id="text4294"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.04935074px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     sodipodi:linespacing="125%">Kamang</text>
+  <text
+     x="1023.4122"
+     y="1215.4738"
+     pixelOffsetX="0"
+     pixelOffsetY="-5"
+     dominant-baseline="no-change"
+     class="internalText"
+     transform="scale(1.0288255,0.97198213)"
+     id="text4300"
+     style="font-size:11.76953697px" />
+</svg>
