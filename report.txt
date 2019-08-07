@@ -1,0 +1,17 @@
+InfoBegin
+InfoKey: CreationDate
+InfoValue: D:20190114155027+01'00'
+InfoBegin
+InfoKey: Creator
+InfoValue: Writer
+InfoBegin
+InfoKey: Producer
+InfoValue: LibreOffice 5.1
+PdfID0: d0673d6aedd4cc9c5a75ad45a7ea0f23
+PdfID1: d0673d6aedd4cc9c5a75ad45a7ea0f23
+NumberOfPages: 1
+PageMediaBegin
+PageMediaNumber: 1
+PageMediaRotation: 0
+PageMediaRect: 0 0 595 842
+PageMediaDimensions: 595 842

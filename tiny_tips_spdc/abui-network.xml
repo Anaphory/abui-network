@@ -159,8 +159,7 @@ version="2.4">
         </prior>
         <prior id="turnOverPrior" name="distribution"
         x="@turnOverRate:species">
-          <Beta id="betadistr.01" name="distr" alpha="1.0"
-          beta="10.0" />
+          <Beta id="betadistr.01" name="distr" alpha="1.0" beta="10.0" />
         </prior>
         <prior id="vocabulary:covarion_s_prior.s"
         name="distribution" x="@vocabulary:pdcovarion_s.s">
