@@ -139,7 +139,7 @@ version="2.4">
           speciesNetwork="@network:species"
           geneTree="@tree:gene$(tree)" />
         </plate>
-        <populationModel id="popModel" alpha="5.0" beta="5.0" spec="speciesnetwork.ConstantPopIntegrated" />
+        <populationModel id="popModel" alpha="5.0" mean="2.0" spec="speciesnetwork.ConstantPopIntegrated" />
       </distribution>
       <distribution id="prior" spec="util.CompoundDistribution">
         <distribution id="networkPrior"
