@@ -21,16 +21,10 @@
                         "name": "ID"
                     },
                     {
-                        "datatype": "integer",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
-                        "required": true,
-                        "name": "REFERENCE"
-                    },
-                    {
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#languageReference",
                         "required": true,
-                        "name": "DOCULECT"
+                        "name": "LANGUAGE_ID"
                     },
                     {
                         "datatype": "string",
@@ -42,7 +36,7 @@
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#value",
                         "required": false,
-                        "name": "Form_according_to_Source"
+                        "name": "FORM_ACCORDING_TO_SOURCE"
                     },
                     {
                         "datatype": "string",
@@ -86,7 +80,7 @@
                     "ID"
                 ]
             },
-            "url": "/vol/home/kaipingga/databases/lexirumah-data/analyses/beastling_best/best.tsv"
+            "url": "./aligned_fixed.tsv"
         }
     ]
 }
