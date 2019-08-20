@@ -19,7 +19,7 @@ species = {
     "Klon": ["kelo1247-bring", "kelo1247-hopte"],
 }
 
-n_trees = 5
+n_trees = 6
 
 
 with Path("../beastling/abui-neighbours-spdc.xml").open("r") as original:
@@ -255,7 +255,15 @@ run.append(BS("""
    <logger fileName="genetrees$(tree).trees" id="treelog:gene$(tree)" logEvery="100000" mode="tree">
     <log dp="4" id="treeLogger:gene$(tree)" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@tree:gene$(tree)"/>
    </logger>
+  </plate>
 """.format(",".join(map(str, range(n_trees)))), "xml"))
+run.append(BS("""
+  <logger fileName="indexes.log" logEvery="100000">
+  <plate range="{:}" var="gene">
+  <log idref="$(gene)"/>
+  </plate>
+  </logger>""".format(",".join(tree_index)), "xml"))
+
 
 # Output the results
 with Path("../beastling/NW-abui-neighbours-spdc.xml").open("w") as new:
