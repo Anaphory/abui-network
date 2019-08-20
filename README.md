@@ -54,7 +54,7 @@ using SplitsTree 4.
 
  - BEAST with the following packages:
    - Babel
-   - speciesnetwork [with my modifications to prevent NullPointer exceptions]
+   - speciesnetwork [with my modifications to prevent NullPointer exceptions, and to provide TreeSelectors]
    in addition to the requirements listed by BEASTling
  - phyltr [with my additions for network support]
  - beastling
