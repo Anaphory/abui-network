@@ -1,15 +1,9 @@
 import sys
 from pathlib import Path
-import lxml
+from bs4 import BeautifulSoup
 
-from lxml.etree import parse, tostring
-with Path(sys.argv[1]).open("rb") as original:
-    file_tree = parse(original)
-for element in file_tree.iter():
-    if element.tail and not element.tail.strip():
-        element.tail = None
-with Path(sys.argv[-1]).open("wb") as new:
-    file_tree.write(
-        new,
-        pretty_print=True,
-        encoding='utf-8')
+with Path(sys.argv[1]).open("r") as original:
+    file_tree = BeautifulSoup(original, "xml")
+print(file_tree)
+with Path(sys.argv[-1]).open("w") as new:
+    new.write(file_tree.prettify())
