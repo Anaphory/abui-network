@@ -1,0 +1,187 @@
+\ProvidesPackage{beamerthemeKaiping}  % this style was created by Thomas Deselaers and Philippe Dreuw, adapted by Gereon Kaiping
+
+% butter (yellowish)
+\definecolor{tabutter}{rgb}{0.98824, 0.91373, 0.30980}		% #fce94f
+\definecolor{tamarineblue}{cmyk}{1.0, 0.11, 0.0, 0.53}
+\definecolor{tamarinegreen}{cmyk}{1.0, 0.0, 0.28, 0.26}
+\definecolor{tamarinegray}{cmyk}{0.33, 0.0, 0.0, 0.71}
+\definecolor{tamarinesilver}{cmyk}{0.22, 0.11, 0.09, 0.22}
+\definecolor{tamarinewhite}{cmyk}{0.01, 0.00, 0.00, 0.00}
+\definecolor{ta2butter}{rgb}{0.92941, 0.83137, 0}		% #edd400
+\definecolor{ta3butter}{rgb}{0.76863, 0.62745, 0}		% #c4a000
+
+% orange
+\definecolor{taorange}{rgb}{0.98824, 0.68627, 0.24314}		% #fcaf3e
+\definecolor{ta2orange}{rgb}{0.96078, 0.47451, 0}		% #f57900
+\definecolor{ta3orange}{rgb}{0.80784, 0.36078, 0}		% #ce5c00
+
+% chocolate (brownish)
+\definecolor{tachocolate}{rgb}{0.91373, 0.72549, 0.43137}	% #e9b96e
+\definecolor{ta2chocolate}{rgb}{0.75686, 0.49020, 0.066667}	% #c17d11
+\definecolor{ta3chocolate}{rgb}{0.56078, 0.34902, 0.0078431}	% #8f5902
+
+\definecolor{tadarknavy}{cmyk}{1.0, 0.11, 0.0, 0.90}
+\definecolor{ta2chameleon}{rgb}{0.45098, 0.82353, 0.086275}	% #73d216
+\definecolor{ta3chameleon}{rgb}{0.30588, 0.60392, 0.023529}	% #4e9a06
+
+% sky blue
+\definecolor{taskyblue}{rgb}{0.44706, 0.56078, 0.81176}		% #728fcf
+\definecolor{ta2skyblue}{rgb}{0.20392, 0.39608, 0.64314}	% #3465a4
+\definecolor{ta3skyblue}{rgb}{0.12549, 0.29020, 0.52941}	% #204a87
+
+% plum (violettish)
+\definecolor{taplum}{rgb}{0.67843, 0.49804, 0.65882}		% #ad7fa8
+\definecolor{ta2plum}{rgb}{0.45882, 0.31373, 0.48235}		% #75507b
+\definecolor{ta3plum}{rgb}{0.36078, 0.20784, 0.4}		% #5c3566
+
+% scarlet red
+\definecolor{tascarletred}{rgb}{0.93725, 0.16078, 0.16078}	% #ef2929
+\definecolor{ta2scarletred}{rgb}{0.8, 0, 0}			% #cc0000
+\definecolor{ta3scarletred}{rgb}{0.64314, 0, 0}			% #a40000
+
+% aluminium
+\definecolor{taaluminium}{rgb}{0.93333, 0.93333, 0.92549}	% #eeeeec
+\definecolor{ta2aluminium}{rgb}{0.82745, 0.84314, 0.81176}	% #d3d7cf
+\definecolor{ta3aluminium}{rgb}{0.72941, 0.74118, 0.71373}	% #babdb6
+
+% gray
+\definecolor{tagray}{rgb}{0.53333, 0.54118, 0.52157}		% #888a85
+\definecolor{ta2gray}{rgb}{0.33333, 0.34118, 0.32549}		% #555753
+\definecolor{ta3gray}{rgb}{0.18039, 0.20392, 0.21176}		% #2e3436
+
+\selectcolormodel{cmyk}
+\mode<presentation>
+
+\setbeamercolor{headline}{fg=white, bg=tamarineblue}
+\setbeamercolor{footline}{fg=white, bg=tamarinegreen}
+\setbeamerfont{footline}{size=\footnotesize}
+\setbeamercolor{title in headline}{fg=white}
+\setbeamercolor{author in headline}{fg=white}
+\setbeamercolor{institute in headline}{fg=white}
+
+\setbeamercolor{framesubtitle}{fg=white, bg=tamarinegray}
+\setbeamercolor{author in head/foot}{fg=white, bg=tamarineblue}
+\setbeamercolor{title in head/foot}{fg=white, bg=tamarineblue}
+
+\setbeamercolor*{normal text}{fg=tadarknavy, bg=tamarinewhite}
+\setbeamercolor*{block body}{bg=white, fg=black}
+\setbeamercolor*{block title}{fg=white, bg=tamarinegreen}
+\setbeamerfont{block title}{size=\large,series=\bf}
+\setbeamercolor{upper separation line head}{fg=ta2orange}
+
+\setbeamercolor*{example body}{fg=ta3aluminium,bg=tamarineblue}
+\setbeamercolor*{example text}{fg=ta3aluminium,bg=tamarineblue}
+\setbeamercolor*{example title}{bg=taorange,fg=ta2gray}
+
+\setbeamercolor{structure}{fg=tamarineblue}
+
+\setbeamertemplate{itemize items}[triangle]
+
+
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{block begin}{
+  \vskip.75ex
+  \begin{beamercolorbox}[ht=3.5ex,dp=0.5ex,center,leftskip=-1em,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title}%
+    {\phantom{Gg}\insertblocktitle}% phantom because of baseline problem
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[leftskip=1em,colsep*=.75ex,sep=0.5ex,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{headline}{  
+  \leavevmode
+
+  \begin{beamercolorbox}[wd=\paperwidth]{headline}
+    \begin{columns}[T]
+      \begin{column}{.02\paperwidth}
+      \end{column}
+      \begin{column}{.7\paperwidth}
+        \vskip4ex
+        \raggedleft
+        \usebeamercolor{title in headline}{\color{fg}\textbf{\large{\inserttitle}}\\[1ex]}
+        \usebeamercolor{author in headline}{\color{fg}\normalsize{\insertauthor}\\[1ex]}
+        \usebeamercolor{institute in headline}{\color{fg}\footnotesize{\insertinstitute}\\[1ex]}     
+      \end{column}
+      \begin{column}{.25\paperwidth}
+        \vskip8ex
+        \begin{center}
+          \includegraphics[width=.95\linewidth]{logo}
+        \end{center}
+        \vskip2ex
+      \end{column}
+      \begin{column}{.02\paperwidth}
+      \end{column}
+    \end{columns}
+    \vskip2ex
+  \end{beamercolorbox}
+
+}
+
+%  \setbeamertemplate{headline}{  
+%    \leavevmode
+%    \begin{beamercolorbox}[sep=0.5cm,wd=.8\paperwidth]{headline}
+%      \usebeamercolor{title in headline}{\raggedleft\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
+%      \usebeamercolor{author in headline}{\raggedleft\color{fg}\large{\insertauthor}\\[1ex]}
+%      \usebeamercolor{institute in headline}{\raggedleft\color{fg}\large{\insertinstitute}\\[1ex]}     
+%    \end{beamercolorbox}%
+%    \begin{beamercolorbox}[wd=.2\paperwidth]{logo in headline}
+%      \centering
+%      \LARGE{LOGO}
+%    \end{beamercolorbox}  
+
+
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
+    \rule{0pt}{3pt}
+  \end{beamercolorbox}
+  
+  \leavevmode%
+  \begin{beamercolorbox}[ht=4ex,leftskip=1em,rightskip=1em]{author in head/foot}%
+    \texttt{\insertdate}
+    \hfill
+    \texttt{Gereon.Kaiping@soton.ac.uk}
+    \vskip1ex
+  \end{beamercolorbox}
+  \vskip0pt%
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
+    \rule{0pt}{3pt}
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Display a grid to help align images ... and it looks nice with this color scheme
+%\beamertemplategridbackground[1cm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<all>
+
+% adapt height of imtemize rectangles
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{itemize item}{\raisebox{0.12ex}{$\blacktriangleright$}\hskip0.1em}
+\setbeamertemplate{itemize subitem}{\raisebox{0.12ex}{$\triangleright$}\hskip0.1em}
+% or define your own template using \defbeamertemplate{itemize item}, see beameruserguide.pdf
+
+% equal font sizes for all levels
+\setbeamerfont{itemize/enumerate body}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subsubbody}{size=\normalsize}
+
+\setbeamerfont{footnote}{size=\tiny}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% End: 
