@@ -1,1 +1,0 @@
-python -i pylexirumah/autocode.py cldf/cldf-metadata.json --soundclass asjp --threshold 0.55 --initial-threshold 0.5
