@@ -22,7 +22,7 @@ species = {
 n_trees = 6
 
 
-with Path("../beastling/abui-neighbours-spdc.xml").open("r") as original:
+with Path("abui-neighbours-spdc.xml").open("r") as original:
     file_tree = BS(original, "xml")
 
 # STEP 1: Update TaxonSet
@@ -266,5 +266,5 @@ run.append(BS("""
 
 
 # Output the results
-with Path("../beastling/NW-abui-neighbours-spdc.xml").open("w") as new:
+with Path("network-abui-neighbours-spdc.xml").open("w") as new:
     new.write(file_tree.prettify())
