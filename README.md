@@ -4,7 +4,7 @@ Bayesian phylogenetic network inference in BEAST, using the example of the Timor
 This method was presented at SLE2019 in Leipzig.
 
 ## Data Source
-The data underlying this study was taken from [LexiRumah 2.2.3](https://github.com/lessersunda/lexirumah-data/commit/67a89d9dc733c068d78288878482ff56eb206e5a), and automatically cognate-coded using LexStat (shipped with [LingPy 2.6.4]()) using the pylexirumah interface
+The data underlying this study was taken from [LexiRumah 2.2.3](https://github.com/lessersunda/lexirumah-data/commit/67a89d9dc733c068d78288878482ff56eb206e5a), and automatically cognate-coded using LexStat (shipped with [LingPy 2.6.4](https://doi.org/10.5281/zenodo.1544172)) using the pylexirumah interface
 
     python -m pylexirumah.autocode ~/lexirumah-data/cldf/cldf-metadata.json --soundclass asjp --threshold 0.55 --initial-threshold 0.5
     
