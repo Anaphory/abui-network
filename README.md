@@ -36,11 +36,11 @@ This produces a BEAST XML file `network-abui-neighbours-spdc.xml`, which can be 
 
 The output of the BEAST run consists of several log files. The file `abui-neighbours-spdc.log` contains information about the general progress of the Markov chain, in particular the likelihood values and posterior probabilities of the samples visited. The `genetrees*.trees` files are Nexus Newick files containing the “gene” tree samples. Concepts are associated to specific trees according to the indices logged in `indexes.log`. The file `networks.newick` lists the sampled phylogenetic network structures in eXtended Newick format in a Nexus wrapper.
 
-To normalize the γ annotations of the networks such that the duplicate leaf, which represents the contact edge, is always the node with the minor contribution (γ<0.5), use [my fork of] Luke Maurits' `phyltr` tool like
+To normalize the γ annotations of the networks such that the duplicate leaf, which represents the contact edge, is always the node with the minor contribution (γ<0.5), use [my fork of](https://github.com/Anaphory/treesed/) Luke Maurits' [`phyltr`](https://pypi.org/project/phyltr/) tool like
 
     phyltr cat -n -b 50 networks.newick > normalized.newick
     
-If, by unlikely chance, the first network contains no contact edges, you may have to change the burnin (`-b`) parameter or find a workaround. The resulting normalized networks can be inspected in Tim Vaughan's [IcyTree](https://icytree.org). The distance histograms were generated using
+If, by unlikely chance, the first network sampled contains no contact edges, you may have to change the burnin (`-b`) parameter or find a workaround. The resulting normalized networks can be inspected in Tim Vaughan's [IcyTree](https://icytree.org). The distance histograms were generated using
 
     phyltr cat -b 50 networks.newick | phyltr distancehistogram -n --max 6 
     
@@ -49,6 +49,14 @@ and the SplitsTree network was generated from the output of
     phyltr cat -b 50 networks.newick | phyltr distances -n > distances.nex
     
 using SplitsTree 4.
+
+## Adaptation
+
+To vary this analysis, change options in the following places.
+
+1. To change the data, modify the `languages` or `data` entry in `beastling/spdc.conf`. You can also try to vary the other model options defined there, but that might break the network inference script.
+2. If you change the set of langugages, you will also have to change their grouping, which is defined in the `species` dictionary in `beast/make_network_config.py`.
+3. To change the number of different trees inferred, change the `n_trees` parameter in `beast/make_network_config.py`.
 
 ## Requirements
 
